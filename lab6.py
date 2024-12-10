@@ -36,11 +36,11 @@ class SniperRifle(Firearms):
         return f"Кратность увеличения прицела: {self.scope_magnification}x."
 
 
+# примеры:
 ak47 = AssaultRifle(number_of_cartridges=30, rate_of_fire=600, shooting_range=300, automatic_mode=True)
 print(ak47.empty_magazine_time())
 print(ak47.fire_rate_to_range_ratio())
 print(ak47.describe())
-
 
 m24 = SniperRifle(number_of_cartridges=5, rate_of_fire=60, shooting_range=1000, scope_magnification=10)
 print(m24.empty_magazine_time())
